@@ -20,7 +20,7 @@ function go(){
 	width = $("#pete").width();
 	offset = $("#pete").offset();
 	
-	alert("json.x = " + json.x + " : offset.left = "  + offset.left + "\njson.y = "  + json.y + " : offset.top =  "  + offset.top + "\njson.width = "  + json.width + " : width = "  + width + "\njson.height = " + json.height + " : height = "  + height);
+	//alert("json.x = " + json.x + " : offset.left = "  + offset.left + "\njson.y = "  + json.y + " : offset.top =  "  + offset.top + "\njson.width = "  + json.width + " : width = "  + width + "\njson.height = " + json.height + " : height = "  + height);
 }
 
 function endResizeCallBack(event, ui){
@@ -36,5 +36,5 @@ function endDragCallBack(){
 
 function check(){
 	var json =$.parseJSON( $.ajax( "../Project5/Project5/getDataJSON.php?", { type: "GET", data: "name="+name, async: false}).responseText );
-    alert("json.x = " + json.x + " : offset.left = "  + offset.left + "\njson.y = "  + json.y + " : offset.top =  "  + offset.top + "\njson.width = "  + json.width + " : width = "  + width + "\njson.height = " + json.height + " : height = "  + height);
+    //alert("json.x = " + json.x + " : offset.left = "  + offset.left + "\njson.y = "  + json.y + " : offset.top =  "  + offset.top + "\njson.width = "  + json.width + " : width = "  + width + "\njson.height = " + json.height + " : height = "  + height);
 }
